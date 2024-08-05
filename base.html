@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Document</title>
+    <meta name="description" content="A brief summary of the page's content">
+    <style>
+        /* Add some basic styling to the button */
+        button {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Add mobile-friendly styling */
+        @media only screen and (max-width: 768px) {
+            body {
+                font-size: 16px;
+            }
+            button {
+                padding: 10px 15px;
+            }
+        }
+
+        @media only screen and (max-width: 480px) {
+            body {
+                font-size: 14px;
+            }
+            button {
+                padding: 10px 10px;
+            }
+        }
+
+        /* Add auto-resizing styling */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Welcome weeb</h1>
+        <p>This is a starter web app.</p>
+        <button id="myButton">punch me!</button>
+    </div>
+
+    <script>
+        // Get the button element
+        const button = document.getElementById('myButton');
+
+        // Add an event listener to the button
+        button.addEventListener('click', () => {
+            // Trigger an alert when the button is clicked
+            alert('yo mommmm');
+        });
+    </script>
+</body>
+</html>
